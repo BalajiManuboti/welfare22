@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Crop Disease Scanner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌱 Smart Crop AI Scanner</h1>
+    <p>Capture or Upload Leaf Image</p>
+
+    <input type="file" id="imageInput" accept="image/*" capture="environment">
+    <img id="previewImage" />
+
+    <button onclick="detectDisease()">Scan Crop</button>
+
+    <div id="result" class="result-box"></div>
+    <div id="pesticide" class="info-box"></div>
+    <div id="weatherAlert" class="alert-box"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
